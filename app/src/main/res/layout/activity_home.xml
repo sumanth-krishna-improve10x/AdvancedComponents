@@ -41,6 +41,14 @@
         android:textAllCaps="false" />
 
     <Button
+        android:id="@+id/team_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Team List"
+        android:textAllCaps="false" />
+
+    <Button
         android:id="@+id/add_members_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
