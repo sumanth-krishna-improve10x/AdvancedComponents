@@ -19,6 +19,7 @@ public class HomeActivity extends AppCompatActivity {
         handleTeamButton();
         handleAddMembers();
         handleTeamList();
+        handleContacts();
     }
 
     public void handleLuckyNumberBtn() {
@@ -67,6 +68,14 @@ public class HomeActivity extends AppCompatActivity {
         teamListBtn.setOnClickListener(view -> {
             Intent teamListIntent = new Intent(this,TeamListActivity.class);
             startActivity(teamListIntent);
+        });
+    }
+
+    public void handleContacts(){
+        Button contactsBtn = findViewById(R.id.contacts_btn);
+        contactsBtn.setOnClickListener(view -> {
+            Intent contactIntent = new Intent(this, ContactsActivity.class);
+            startActivity(contactIntent);
         });
     }
 }
